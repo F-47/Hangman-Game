@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imgs/icon.png" />
+    <title>HangMan</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="game-info">
+        <div class="game-name">Hangman</div>
+        <div class="category">
+          Word is a: <span></span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>
+            <div class="the-hang"></div>
+            <div class="the-rope"></div>
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="letters"></div>
+
+      </div>
+
+      <hr>
+
+      <div class="letters-guess"></div>
+
+    </div>
+    <audio src="Sounds/true.mp3" class="true" preload="auto"></audio>  <!--true -->
+    <audio src="Sounds/fail.mp3" class="wrong" preload="auto"></audio> <!--fail -->
+    <audio src="Sounds/MarioDead.mp3" class="GameOver" preload="auto"></audio> <!--GameOver -->
+    <audio src="Sounds/Win.mp3" class="Win" preload="auto"></audio> <!-- Win -->
+    <script src="main.js"></script>
+  </body>
+</html>
